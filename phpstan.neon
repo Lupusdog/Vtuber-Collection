@@ -1,0 +1,10 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    level: 5 # 解析の厳密さを指定（0〜10）。10 が最も厳密。
+    paths:
+        - app # 解析対象ディレクトリ
+    ignoreErrors: []
+    scanDirectories:
+        - database/factories # 必要に応じて追加（モデルファクトリなどを解析対象にする場合）
